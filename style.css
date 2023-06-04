@@ -1,0 +1,49 @@
+h1 {
+    color: green-;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.photos img {
+    width: 150px;
+}
+
+
+
+.photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+nav{
+    display: flex;
+    padding: 15%;
+    justify-content: space-between;
+    align-items: center;    
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: left;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: blue;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 100%;
+    height: 10px;
+    background: whitesmoke;
+    display: block;
+    margin: auto;
+}
